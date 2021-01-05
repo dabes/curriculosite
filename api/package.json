@@ -1,0 +1,20 @@
+{
+  "name": "site-api",
+  "version": "1.0.0",
+  "description": "Backend api for vue app with mongodb",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Dabés",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
