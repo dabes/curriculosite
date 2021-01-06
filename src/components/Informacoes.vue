@@ -25,11 +25,11 @@
                 </p>
                 <p class="card-text text-left hidden nome-print">
                     <text class="font-bolder">Linkedin:</text>
-                    {{ linkedin }}
+                    {{ linkReplaceChar }}
                 </p>
                 <p class="card-text text-left hidden nome-print">
                     <text class="font-bolder">Facebook:</text>
-                    {{ facebook }}
+                    {{ facebookUrl }}
                 </p>
             </div>
         </div>
@@ -68,13 +68,20 @@ export default {
     mounted() {
         window.axios
             .get(
-                "https://api.dabes.com.br/api/informacoes/" + this.curriculoUid
+                process.env.VUE_APP_API +
+                    "/api/informacoes/" +
+                    this.curriculoUid
             )
             .then((response) => {
                 for (var key in response.data) {
                     this.data = response.data[key];
                 }
             });
+    },
+    computed: {
+        linkReplaceChar() {
+            return this.linkedinUrl.replace("%C3%A9", "é");
+        },
     },
 };
 </script>

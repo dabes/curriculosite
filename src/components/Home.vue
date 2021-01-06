@@ -78,7 +78,7 @@
             <Informacoes
                 :curriculoUid="data._id"
                 :facebookUrl="data.facebook"
-                :linkedinUrL="data.linkedin"
+                :linkedinUrl="data.linkedin"
                 v-if="data._id"
             />
             <div style="height: 10px"></div>
@@ -143,8 +143,9 @@ export default {
         };
     },
     mounted() {
+        console.log(process.env);
         window.axios
-            .get("https://api.dabes.com.br/api/curriculo")
+            .get(process.env.VUE_APP_API + "/api/curriculo")
             .then((response) => {
                 for (var key in response.data) {
                     this.data = response.data[key];

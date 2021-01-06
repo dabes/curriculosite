@@ -52,7 +52,7 @@ export default {
     },
     mounted() {
         window.axios
-            .get("https://api.dabes.com.br/api/formacao/" + this.curriculoUid)
+            .get(process.env.VUE_APP_API + "/api/formacao/" + this.curriculoUid)
             .then((response) => {
                 for (var key in response.data) {
                     this.data = response.data[key];

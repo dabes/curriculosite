@@ -65,7 +65,7 @@ export default {
     },
     mounted() {
         window.axios
-            .get("https://api.dabes.com.br/api/carreira/" + this.curriculoUid)
+            .get(process.env.VUE_APP_API + "/api/carreira/" + this.curriculoUid)
             .then((response) => {
                 this.data = response.data;
             });

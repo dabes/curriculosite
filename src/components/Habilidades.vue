@@ -93,7 +93,9 @@ export default {
     },
     mounted() {
         window.axios
-            .get("https://api.dabes.com.br/api/habilidade/" + this.curriculoUid)
+            .get(
+                process.env.VUE_APP_API + "/api/habilidade/" + this.curriculoUid
+            )
             .then((response) => {
                 this.data = response.data;
             });
