@@ -103,7 +103,7 @@ export default {
     components: { Menu, Timeline, Habilidades, Informacoes, Formacao },
     data() {
         return {
-            isActive: true,
+            isActive: false,
             data: {
                 title: "",
                 name: "",
