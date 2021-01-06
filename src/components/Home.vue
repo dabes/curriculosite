@@ -75,11 +75,11 @@
             </div>
         </div>
         <div id="CV" class="CV" :class="{ hidden: !isActive }">
-            <Informacoes :curriculoUid="data._id" />
+            <Informacoes :curriculoUid="data._id" v-if="data._id" />
             <div style="height: 10px"></div>
-            <Formacao :curriculoUid="data._id" />
-            <Timeline />
-            <Habilidades :curriculoUid="data._id" />
+            <Formacao :curriculoUid="data._id" v-if="data._id" />
+            <Timeline :curriculoUid="data._id" v-if="data._id" />
+            <Habilidades :curriculoUid="data._id" v-if="data._id" />
         </div>
         <footer class="card-footer footer d-print-none">
             <span class="text-muted"

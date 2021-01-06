@@ -68,7 +68,6 @@ export default {
             .get("http://localhost:3000/api/carreira/" + this.curriculoUid)
             .then((response) => {
                 this.data = response.data;
-                console.log(this.data);
             });
     },
 };
