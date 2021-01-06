@@ -139,7 +139,7 @@ export default {
     },
     mounted() {
         window.axios
-            .get("http://localhost:3000/api/curriculo")
+            .get("https://api.dabes.com.br/api/curriculo")
             .then((response) => {
                 for (var key in response.data) {
                     this.data = response.data[key];

@@ -93,7 +93,7 @@ export default {
     },
     mounted() {
         window.axios
-            .get("http://localhost:3000/api/habilidade/" + this.curriculoUid)
+            .get("https://api.dabes.com.br/api/habilidade/" + this.curriculoUid)
             .then((response) => {
                 this.data = response.data;
             });

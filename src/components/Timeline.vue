@@ -65,7 +65,7 @@ export default {
     },
     mounted() {
         window.axios
-            .get("http://localhost:3000/api/carreira/" + this.curriculoUid)
+            .get("https://api.dabes.com.br/api/carreira/" + this.curriculoUid)
             .then((response) => {
                 this.data = response.data;
             });

@@ -51,7 +51,9 @@ export default {
     },
     mounted() {
         window.axios
-            .get("http://localhost:3000/api/informacoes/" + this.curriculoUid)
+            .get(
+                "https://api.dabes.com.br/api/informacoes/" + this.curriculoUid
+            )
             .then((response) => {
                 for (var key in response.data) {
                     this.data = response.data[key];
