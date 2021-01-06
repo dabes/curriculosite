@@ -75,7 +75,12 @@
             </div>
         </div>
         <div id="CV" class="CV" :class="{ hidden: !isActive }">
-            <Informacoes :curriculoUid="data._id" v-if="data._id" />
+            <Informacoes
+                :curriculoUid="data._id"
+                :facebookUrl="data.facebook"
+                :linkedinUrL="data.linkedin"
+                v-if="data._id"
+            />
             <div style="height: 10px"></div>
             <Formacao :curriculoUid="data._id" v-if="data._id" />
             <Timeline :curriculoUid="data._id" v-if="data._id" />

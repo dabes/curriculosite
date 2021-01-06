@@ -23,6 +23,14 @@
                     <text class="font-bolder">Estado Civil:</text>
                     {{ data.estadoCivil }}
                 </p>
+                <p class="card-text text-left hidden nome-print">
+                    <text class="font-bolder">Linkedin:</text>
+                    {{ linkedin }}
+                </p>
+                <p class="card-text text-left hidden nome-print">
+                    <text class="font-bolder">Facebook:</text>
+                    {{ facebook }}
+                </p>
             </div>
         </div>
     </div>
@@ -33,6 +41,14 @@ export default {
     name: "Informacoes",
     props: {
         curriculoUid: {
+            type: String,
+            default: "",
+        },
+        linkedinUrl: {
+            type: String,
+            default: "",
+        },
+        facebookUrl: {
             type: String,
             default: "",
         },
