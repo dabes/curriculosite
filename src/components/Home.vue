@@ -143,7 +143,6 @@ export default {
         };
     },
     mounted() {
-        console.log(process.env);
         window.axios
             .get(process.env.VUE_APP_API + "/api/curriculo")
             .then((response) => {
