@@ -89,13 +89,13 @@ export default {
                         {
                             type: "item",
                             label: "Projetos Feitos",
-                            link: "portifolio/projetos",
+                            link: "/portifolio/projetos",
                             props: "",
                         },
                         {
                             type: "item",
                             label: "Componentes",
-                            link: "portifolio/componentes",
+                            link: "/portifolio/componentes",
                             props: "",
                         },
                         {

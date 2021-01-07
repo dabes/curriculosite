@@ -47,28 +47,28 @@ export default {
                         description:
                             "Escrito em python, conecta as bases de origem e de destino em PostgreSQL para transferir os dados de um banco para outro. Concebido para facilitar as migrações das áreas devido ao dominio do banco de dados de destino por parte dos colaboradores.",
                         img: require("../assets/img/migrador.png"),
-                        _id: "12312312332123312",
+                        _id: "migrador",
                     },
                     {
                         name: "Coletor",
                         description:
                             "Escrito em python com django, conecta as bases dos clientes para efetuar operações de monitoramento, coleta de informações e execução remota de procedimentos.",
-                        img: require("../assets/img/coletor.png"),
-                        _id: "12312312332123312",
+                        img: require("../assets/img/coletor/coletor.png"),
+                        _id: "coletor",
                     },
                     {
                         name: "App Obras",
                         description:
                             "Escrito em React Native, para coleta de informações a partir de dispositivo móvel para melhor experiência do usuário.",
                         img: require("../assets/img/sgpobras.jpeg"),
-                        _id: "12312312332123312",
+                        _id: "sgpobras",
                     },
                     {
                         name: "Backend",
                         description:
                             "Escrito em node, conecta ao MongoDB usando métodos de modelagem avançados para entregar uma API RESTFull.",
                         img: require("../assets/img/backend.png"),
-                        _id: "12312312332123312",
+                        _id: "backend",
                     },
                 ],
             },

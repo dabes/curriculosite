@@ -75,6 +75,11 @@
     padding: 0;
 }
 
+.clear {
+    height: 10px;
+    width: 100%;
+}
+
 @media print{
     .info, .formacao {
         padding: unset;

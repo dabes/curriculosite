@@ -11,6 +11,11 @@ const routes = [
     name: "Projetos",
     component: () => import("../components/Projetos.vue"),
   },
+  {
+    path: "/portifolio/projetos/coletor",
+    name: "Coletor",
+    component: () => import("../components/Coletor.vue"),
+  },
 ];
 
 const router = createRouter({

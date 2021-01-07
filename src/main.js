@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import "./assets/css/bootstrap-material-design.min.css";
 import "./assets/css/main.css";
 import router from "./router";
 window.axios = require("axios");
